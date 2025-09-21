@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>bob</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #b4a7d7;
+            border: dotted 1px black;
+            border-radius: 10px;
+            max-width: 600px;
+            padding: 20px 40px;
+            margin: 50px auto;
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 15px;
+            background-color: #570d90;
+            color: white;
+            width: 20%;
+            border-radius: 10px;
+            margin: 5px auto 15px auto;
+            padding: 2px 0;
+        }
+
+        input {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        button {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <center>
+        <div class="container">
+            <div class="text">
+                <br>
+                <h1>Simple Average Finder</h1><br>
+                <p>Score 1:</p>
+                <input type="number" class="form-control" id="input1" placeholder="Enter your score..." />
+                <h2>Quiz 1</h2>
+
+                <p>Score 2:</p>
+                <input type="number" class="form-control" id="input2" placeholder="Enter your score..." />
+                <h2>Quiz 2</h2>
+
+                <button type="button" class="btn btn-primary" py-click="average_score">Compute</button>
+                <div style="font-weight: bold;" id="output1"></div>
+                <div style="font-weight: bold;" id="output2"></div>
+            </div>
+        </div>
+    </center>
+    <py-script src="main.py"></py-script>
+</body>
+
+</html>
